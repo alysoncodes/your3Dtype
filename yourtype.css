@@ -1,0 +1,245 @@
+/*------------------------------------
+ *   VARIABLES
+ *------------------------------------*/
+
+
+/**GLOBAL COLORS**/
+
+@lightBeige: #FCFBF4;
+@darkBeige: #FFF7E4;
+@lightBlue: #8082BA;
+@darkBlue: #2D2940;
+
+/**BREAKPOINTS**/
+
+@maxBP: 1649px;
+@deskBP: 768px;
+@mBP: 767px;
+
+
+/**OTHER VARIABLES**/
+
+@mobile:~"only screen and (max-width: 767px)";
+@desktop:~"only screen and (min-width: 768px)";
+@tablet: ~"only screen and (max-width: 1024px) and (min-width:768px)";
+@desktopXL: ~"only screen and (min-width: 1649px)"; 
+
+
+/*------------------------------------
+ *   MIXINS
+ *------------------------------------*/
+
+.headfont {
+
+}
+
+.buttonfont {
+   
+}
+
+/*------------------------------------
+ *   CUSTOM FONTS
+ *------------------------------------*/
+
+@font-face {
+  font-family: 'oliver';
+  src: url('https://static1.squarespace.com/static/63ffb27537e5ce1957924f52/t/642c860e153a60401d359e6f/1680639502575/OliverLabel-Regular.woff') format('woff'), url('https://static1.squarespace.com/static/63ffb27537e5ce1957924f52/t/642c86135812646c669f2fdd/1680639507292/OliverLabel-Regular.woff2') format('woff2');
+}
+
+
+/*------------------------------------
+ *   GLOBAL STYLES
+ *------------------------------------*/
+.full-width {
+.fluid-engine {
+  --sqs-site-max-width:100vw;
+
+  --sqs-site-gutter:0vw;
+
+}
+}
+
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+
+
+.page-section:not(.user-items-list-section):not(.content-collection)>.content-wrapper {
+    box-sizing: border-box !important;
+    position: static !important
+}
+body:not(.sqs-edit-mode) {
+.sqs-row {
+ position:static !important
+}
+}
+
+a {
+  background-size:0px !important;
+  text-decoration:none !important;
+}
+
+/*------------------------------------
+ *   fonts
+ *------------------------------------*/
+
+h1 {
+  font-family:'termina' !important;
+  font-weight:bold !important;
+  letter-spacing: -.15rem;
+  text-transform: uppercase;
+}
+
+h4{
+  font-family:'termina' !important;
+  font-weight:bold !important;
+  letter-spacing:.06rem;
+  text-transform: uppercase;
+}
+
+// button font styling
+
+ h4{
+  font-family:'termina' !important;
+  font-weight:bold !important;
+  letter-spacing:.06rem;
+  text-transform: uppercase;
+}
+
+p.sqsrte-large{
+  font-family: 'oliver';
+}
+
+//unhide if I want to globally remove margins
+/*
+h1,h2,h3 {
+ margin:0em !important;
+}
+*/
+
+//fluid sizes
+
+.h1-size {
+
+@media screen and (min-width: 0) and (max-width:@maxBP) and (orientation:landscape) {
+        font-size:calc(~"(X - 1) * 1.2vw + 1rem")
+}
+
+
+
+@media screen and (min-width: 0) and (max-width:@maxBP) and (orientation:portrait) {
+
+        font-size:calc(~"(X - 1) * 1.2vh + 1rem")
+}
+
+@media screen and (min-width: @maxBP) {
+        font-size:calc(~"X * 1rem")
+}
+
+}
+
+.h2-size {
+
+@media screen and (min-width: 0) and (max-width:@maxBP) and (orientation:landscape) {
+  
+        font-size:calc(~"(X - 1) * 1.2vw + 1rem")
+    
+}
+
+@media screen and (min-width: 0) and (max-width:@maxBP) and (orientation:portrait) {
+ 
+        font-size:calc(~"(X - 1) * 1.2vh + 1rem")
+    
+}
+
+@media screen and (min-width: @maxBP) {
+   
+        font-size:calc(~"X * 1rem")
+  
+}
+
+}
+
+
+
+.h3-size {
+
+@media screen and (min-width: 0) and (max-width:@maxBP) and (orientation:landscape) {
+   
+        font-size:calc(~"(X - 1) * 1.2vw + 1rem")
+    
+}
+
+@media screen and (min-width: 0) and (max-width:@maxBP) and (orientation:portrait) {
+   
+        font-size:calc(~"(X- 1) * 1.2vh + 1rem")
+    
+}
+
+@media screen and (min-width: @maxBP) {
+   
+        font-size:calc(~"2.2 * 1rem")
+    
+}
+
+}
+
+//section themes
+
+/*------------------------------------
+ *  DARK 1
+ *------------------------------------*/
+
+
+/*------------------------------------
+ *  HEADER
+ *------------------------------------*/
+
+
+
+/*------------------------------------
+ *  FOOTER
+ *------------------------------------*/
+
+
+
+//page specific
+
+/*------------------------------------
+ *  HOME
+ *------------------------------------*/
+
+//section one
+
+//rotate text
+#block-yui_3_17_2_1_1680651039172_13993{
+  p.sqsrte-large{
+    rotate: -11deg;
+  }
+}
+
+//add arrow
+
+#block-yui_3_17_2_1_1680651039172_13993{
+  p.sqsrte-large:after{
+      background: url('https://static1.squarespace.com/static/63ffb27537e5ce1957924f52/t/642cb70f20b6560601072ac9/1680652047678/arrow.png');
+  content: '';
+  height:3vw;
+  width: 3vw;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  display: inline-block;
+  //transform: translate(-39vw, 5vw);
+  z-index: 10;
+  right: 50%;
+    position: absolute;
+    bottom: -90%;
+    
+}
+  }
+
+/*------------------------------------
+ *  Blog Home
+ *------------------------------------*/
